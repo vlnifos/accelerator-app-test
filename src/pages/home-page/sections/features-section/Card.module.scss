@@ -1,0 +1,59 @@
+.card {
+  background: #ffffff;
+
+  color: #33475b;
+
+  box-shadow: 0px 8px 24px 8px rgba(0, 0, 0, 0.08);
+
+  border-radius: 32px;
+
+  width: 26%;
+
+  margin-bottom: 18px;
+
+  padding: 32px;
+}
+
+.title {
+  span {
+    color: #363c45;
+
+    font-size: 24px;
+    font-weight: 600;
+
+    margin-left: 16px;
+  }
+}
+
+.text {
+  font-size: 14px;
+  margin-top: 23px;
+
+  font-weight: 500;
+
+  color: #33475b;
+}
+
+.divider {
+  margin: 32px 0;
+}
+
+.features-title {
+  font-weight: 600;
+  font-size: 16px;
+
+  margin-bottom: 8px;
+}
+
+.feature {
+  margin: 8px 0;
+
+  span {
+    margin-left: 8px;
+    line-height: 29px;
+  }
+}
+
+.action {
+  margin-top: 72px;
+}

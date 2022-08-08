@@ -26,3 +26,15 @@
 
   color: #6b788a;
 }
+
+.cards {
+  flex-wrap: wrap;
+
+  margin-top: 86px;
+
+  &::after {
+    content: "";
+    flex-grow: 0;
+    width: 32%;
+  }
+}
