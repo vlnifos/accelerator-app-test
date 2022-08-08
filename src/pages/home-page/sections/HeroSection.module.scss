@@ -1,0 +1,59 @@
+.hero-section-background {
+  background: linear-gradient(110.96deg, #206ecf 0.72%, #71b0ff 100%);
+  min-height: 100vh;
+}
+
+.hero-section {
+  text-align: center;
+
+  color: white;
+
+  padding-top: 140px;
+
+  button {
+    margin-top: 24px;
+  }
+}
+
+.upper-title {
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.title {
+  font-size: 72px;
+  font-weight: 700;
+
+  width: 80%;
+
+  margin: 0 auto;
+  margin-top: 24px;
+}
+
+.subtitle {
+  width: 60%;
+
+  font-size: 20px;
+
+  margin: 0 auto;
+  margin-top: 16px;
+}
+
+.looper {
+  position: absolute;
+  right: 0;
+  top: 0;
+
+  pointer-events: none;
+}
+
+.watch-video {
+  position: relative;
+
+  button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}

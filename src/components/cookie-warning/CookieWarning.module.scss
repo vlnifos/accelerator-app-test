@@ -1,0 +1,26 @@
+.cookie-warning {
+  position: fixed;
+
+  z-index: 1;
+
+  background: white;
+
+  bottom: 0;
+  left: 0;
+  width: 100%;
+
+  button.btn-regular {
+    color: red;
+    background: #206ecf;
+    color: white;
+  }
+
+  .btn-outlined {
+    color: #206ecf;
+    background: #206ecf;
+  }
+
+  .btn-solo {
+    color: #0d122b;
+  }
+}

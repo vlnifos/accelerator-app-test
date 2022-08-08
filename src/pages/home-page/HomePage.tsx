@@ -1,3 +1,10 @@
+import { HeroSection } from "./sections/HeroSection"
+
 export const HomePage = () => {
-  return <div>Home</div>
+  return (
+    <div>
+      {/* First section */}
+      <HeroSection />
+    </div>
+  )
 }

@@ -1,4 +1,4 @@
-import Logo from "assets/logo.png"
+import Logo from "assets/images/logo.png"
 import { Button } from "components/button/Button"
 import classes from "./Header.module.scss"
 
