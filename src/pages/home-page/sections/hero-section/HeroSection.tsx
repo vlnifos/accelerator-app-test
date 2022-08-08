@@ -24,6 +24,9 @@ export const HeroSection = () => {
           facilitate innovation between all members of our community
         </div>
 
+        {/* Schedule a Demo button */}
+        <Button onClick={() => {}}>Schedule a Demo</Button>
+
         <div className={classes["watch-video"]}>
           <Button onClick={() => {}}>
             <div className="flex-row">
@@ -35,9 +38,6 @@ export const HeroSection = () => {
 
           <img src={video} alt="img" />
         </div>
-
-        {/* Schedule a Demo button */}
-        <Button onClick={() => {}}>Schedule a Demo</Button>
       </div>
     </div>
   )

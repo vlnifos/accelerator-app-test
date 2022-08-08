@@ -1,0 +1,40 @@
+.features {
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+
+  div:nth-child(1) {
+    margin-top: 15%;
+  }
+
+  div:nth-child(2) {
+    margin-top: 10%;
+  }
+
+  div:nth-child(3) {
+    color: yellow;
+    margin-top: 5%;
+  }
+
+  div:nth-child(4) {
+    margin-top: 10%;
+  }
+
+  div:nth-child(5) {
+    margin-top: 15%;
+  }
+}
+
+.feature {
+  width: 184px;
+  height: 184px;
+
+  box-shadow: 0px 16px 48px rgba(0, 0, 0, 0.18);
+  border-radius: 32px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+}

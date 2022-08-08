@@ -1,10 +1,14 @@
-import { HeroSection } from "./sections/HeroSection"
+import { FeaturesSection } from "./sections/features-section/FeaturesSection"
+import { HeroSection } from "./sections/hero-section/HeroSection"
 
 export const HomePage = () => {
   return (
     <div>
-      {/* First section */}
+      {/* Hero section */}
       <HeroSection />
+
+      {/* Features section */}
+      <FeaturesSection />
     </div>
   )
 }

@@ -1,6 +1,5 @@
 .hero-section-background {
-  background: linear-gradient(110.96deg, #206ecf 0.72%, #71b0ff 100%);
-  min-height: 100vh;
+  background: url("/assets/images/background.svg");
 }
 
 .hero-section {
@@ -12,6 +11,7 @@
 
   button {
     margin-top: 24px;
+    margin-bottom: 48px;
   }
 }
 
