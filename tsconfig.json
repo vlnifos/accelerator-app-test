@@ -24,8 +24,11 @@
       "components/*": ["components/*"],
       "images/*": ["images/*"],
     },
-    "plugins": [{ "name": "typescript-plugin-css-modules" }],
+    "plugins": [{ "name": "typescript-plugin-css-modules", "options": {
+      "classnameTransform": "dashes",
+    } }],
   },
+  "files": ["declaration.d.ts", "./src/gatsby-types.d.ts"],
   "include": [
     "src"
   ]
