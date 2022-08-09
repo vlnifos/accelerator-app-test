@@ -9,6 +9,34 @@ import chart from "images/chart.svg"
 import plus from "images/plus.svg"
 import { Card, FeatureCardProps } from "./Card"
 
+export const FeaturesSection = () => {
+  const renderCards = () => {
+    return features.map((x) => <Card {...x} key={x.title} />)
+  }
+
+  return (
+    <div className={`container`}>
+      <div className={classes.featuresList}>
+        <Features />
+      </div>
+
+      {/* Title */}
+      <div>
+        <div className={classes.upperTitle}>Community</div>
+        <div className={classes.title}>Lorem ipsum dolor sit amet</div>
+        <div className={classes.subtitle}>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </div>
+      </div>
+
+      {/* Cards */}
+      <div className={`flex-row justify-between ${classes.cards}`}>
+        {renderCards()}
+      </div>
+    </div>
+  )
+}
+
 const features: FeatureCardProps[] = [
   {
     title: "Incubator/Accelerator",
@@ -82,33 +110,5 @@ const features: FeatureCardProps[] = [
     },
   },
 ]
-
-export const FeaturesSection = () => {
-  const renderCards = () => {
-    return features.map((x) => <Card {...x} key={x.title} />)
-  }
-
-  return (
-    <div className={`container`}>
-      <div className={classes.featuresList}>
-        <Features />
-      </div>
-
-      {/* Title */}
-      <div>
-        <div className={classes.upperTitle}>Community</div>
-        <div className={classes.title}>Lorem ipsum dolor sit amet</div>
-        <div className={classes.subtitle}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        </div>
-      </div>
-
-      {/* Cards */}
-      <div className={`flex-row justify-between ${classes.cards}`}>
-        {renderCards()}
-      </div>
-    </div>
-  )
-}
 
 export default FeaturesSection
