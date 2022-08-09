@@ -1,9 +1,10 @@
-import classes from "./Features.module.scss"
-import Diagram from "assets/images/Diagram.png"
-import Rocket from "assets/images/Rocket.png"
-import Cubes from "assets/images/Cubes.png"
-import Doc from "assets/images/Doc.png"
-import Growth from "assets/images/Growth.png"
+import React from "react"
+import * as classes from "./Features.module.scss"
+import Diagram from "images/Diagram.png"
+import Rocket from "images/Rocket.png"
+import Cubes from "images/Cubes.png"
+import Doc from "images/Doc.png"
+import Growth from "images/Growth.png"
 
 export const Features = () => {
   return (
@@ -27,3 +28,5 @@ const Feature = (props: FeatureProps) => {
     </div>
   )
 }
+
+export default Features

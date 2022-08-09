@@ -1,11 +1,12 @@
+import React from "react"
 import { Features } from "./Features"
-import classes from "./FeaturesSection.module.scss"
+import * as classes from "./FeaturesSection.module.scss"
 
-import stats from "assets/images/stats.svg"
-import cubesSmall from "assets/images/cubes-small.svg"
-import rocketSmall from "assets/images/rocket-small.svg"
-import chart from "assets/images/chart.svg"
-import plus from "assets/images/plus.svg"
+import stats from "images/stats.svg"
+import cubesSmall from "images/cubes-small.svg"
+import rocketSmall from "images/rocket-small.svg"
+import chart from "images/chart.svg"
+import plus from "images/plus.svg"
 import { Card, FeatureCardProps } from "./Card"
 
 export const FeaturesSection = () => {
@@ -109,3 +110,5 @@ const features: FeatureCardProps[] = [
     },
   },
 ]
+
+export default FeaturesSection

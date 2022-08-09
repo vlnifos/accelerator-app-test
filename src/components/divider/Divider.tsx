@@ -1,4 +1,5 @@
-import classes from "./Divider.module.scss"
+import React from "react"
+import * as classes from "./Divider.module.scss"
 
 type Props = {
   direction?: "vertical" | "horizontal"
@@ -18,3 +19,5 @@ export const Divider = (props: Props) => {
     />
   )
 }
+
+export default Divider

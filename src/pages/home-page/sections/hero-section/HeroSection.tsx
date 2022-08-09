@@ -1,8 +1,9 @@
+import React from "react"
 import { Button } from "components/button/Button"
-import looper from "assets/images/looper.svg"
-import video from "assets/images/video.svg"
-import playIcon from "assets/images/play-icon.svg"
-import classes from "./HeroSection.module.scss"
+import looper from "images/looper.svg"
+import video from "images/video.svg"
+import playIcon from "images/play-icon.svg"
+import * as classes from "./HeroSection.module.scss"
 
 export const HeroSection = () => {
   return (
@@ -44,3 +45,4 @@ export const HeroSection = () => {
     </div>
   )
 }
+export default HeroSection

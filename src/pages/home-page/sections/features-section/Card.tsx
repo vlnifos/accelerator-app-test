@@ -1,8 +1,8 @@
+import React from "react"
 import { Divider } from "components/divider/Divider"
-import checkmark from "assets/images/checkmark.svg"
-import classes from "./Card.module.scss"
+import checkmark from "images/checkmark.svg"
+import * as classes from "./Card.module.scss"
 import { Button } from "components/button/Button"
-
 export type FeatureCardProps = {
   image: any
   title: string
@@ -49,3 +49,5 @@ export const Card = (props: FeatureCardProps) => {
     </div>
   )
 }
+
+export default Card

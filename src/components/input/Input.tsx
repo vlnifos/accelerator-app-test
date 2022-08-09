@@ -1,4 +1,5 @@
-import classes from "./Input.module.scss"
+import React from "react"
+import * as classes from "./Input.module.scss"
 
 type Props = {
   value: string
@@ -19,3 +20,5 @@ export const Input = (props: Props) => {
     />
   )
 }
+
+export default Input

@@ -1,5 +1,6 @@
+import React from "react"
 import { Divider } from "components/divider/Divider"
-import classes from "./Section.module.scss"
+import * as classes from "./Section.module.scss"
 
 type Props = {
   title: string
@@ -17,3 +18,5 @@ export const Section = (props: Props) => {
     </div>
   )
 }
+
+export default Section

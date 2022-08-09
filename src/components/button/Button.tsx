@@ -1,4 +1,5 @@
-import classes from "./Button.module.scss"
+import React from "react"
+import * as classes from "./Button.module.scss"
 import cx from "classnames"
 
 type Props = {
@@ -26,3 +27,5 @@ export const Button = (props: Props) => {
     </button>
   )
 }
+
+export default Button

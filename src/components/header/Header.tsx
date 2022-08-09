@@ -1,9 +1,9 @@
-import Logo from "assets/images/logo.png"
+import Logo from "images/logo.png"
 import classNames from "classnames"
 import { Button } from "components/button/Button"
 import React, { useEffect } from "react"
-import classes from "./Header.module.scss"
-import hamburgerIcon from "assets/images/hamburger.svg"
+import * as classes from "./Header.module.scss"
+import hamburgerIcon from "images/hamburger.svg"
 
 export const Header = () => {
   const [scrolled, setScrolled] = React.useState(false)
@@ -67,3 +67,5 @@ export const Header = () => {
     </header>
   )
 }
+
+export default Header

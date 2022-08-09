@@ -2,16 +2,16 @@ import { Button } from "components/button/Button"
 import { Divider } from "components/divider/Divider"
 import { Input } from "components/input/Input"
 import React from "react"
-import classes from "./Footer.module.scss"
+import * as classes from "./Footer.module.scss"
 import { Section } from "./Section"
 import { Badge } from "components/badge/Badge"
 
-import linkedInIcon from "assets/images/linkedIn.svg"
-import facebookIcon from "assets/images/facebook.svg"
-import instagramIcon from "assets/images/instagram.svg"
-import twitterIcon from "assets/images/twitter.svg"
-import globeIcon from "assets/images/globe.svg"
-import arrowIcon from "assets/images/arrow.svg"
+import linkedInIcon from "images/linkedIn.svg"
+import facebookIcon from "images/facebook.svg"
+import instagramIcon from "images/instagram.svg"
+import twitterIcon from "images/twitter.svg"
+import globeIcon from "images/globe.svg"
+import arrowIcon from "images/arrow.svg"
 
 export const Footer = () => {
   const [email, setEmail] = React.useState("")
@@ -199,3 +199,5 @@ export const Footer = () => {
     </footer>
   )
 }
+
+export default Footer

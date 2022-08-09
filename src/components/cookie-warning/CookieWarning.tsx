@@ -1,5 +1,6 @@
+import React from "react"
 import { Button } from "components/button/Button"
-import classes from "./CookieWarning.module.scss"
+import * as classes from "./CookieWarning.module.scss"
 
 type Props = {
   handleCookieAction: () => void
@@ -40,3 +41,5 @@ export const CookieWarning = (props: Props) => {
     </div>
   )
 }
+
+export default CookieWarning

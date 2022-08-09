@@ -9,3 +9,5 @@ export const RoutesList = (props: any) => {
     </Routes>
   )
 }
+
+export default RoutesList
