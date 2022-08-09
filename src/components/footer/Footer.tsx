@@ -4,13 +4,14 @@ import { Input } from "components/input/Input"
 import React from "react"
 import classes from "./Footer.module.scss"
 import { Section } from "./Section"
+import { Badge } from "components/badge/Badge"
 
 import linkedInIcon from "assets/images/linkedIn.svg"
 import facebookIcon from "assets/images/facebook.svg"
 import instagramIcon from "assets/images/instagram.svg"
 import twitterIcon from "assets/images/twitter.svg"
 import globeIcon from "assets/images/globe.svg"
-import { Badge } from "components/badge/Badge"
+import arrowIcon from "assets/images/arrow.svg"
 
 export const Footer = () => {
   const [email, setEmail] = React.useState("")
@@ -33,12 +34,18 @@ export const Footer = () => {
         </div>
 
         {/* Email input */}
-        <Input
-          value={email}
-          onChange={(val) => setEmail(val)}
-          placeholder="Your email"
-          onSubmit={handleSubmit}
-        />
+        <div className="flex-row">
+          <Input
+            value={email}
+            onChange={(val) => setEmail(val)}
+            placeholder="Your email"
+            onSubmit={handleSubmit}
+          />
+
+          <Button type="solo" onClick={handleSubmit}>
+            <img src={arrowIcon} alt="" />
+          </Button>
+        </div>
 
         <Divider />
       </div>
