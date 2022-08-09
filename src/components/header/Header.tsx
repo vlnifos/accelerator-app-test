@@ -1,5 +1,7 @@
 import Logo from "assets/images/logo.png"
+import classNames from "classnames"
 import { Button } from "components/button/Button"
+import React, { useEffect } from "react"
 import classes from "./Header.module.scss"
 
 type Props = {
@@ -7,8 +9,22 @@ type Props = {
 }
 
 export const Header = (props: Props) => {
+  const [scrolled, setScrolled] = React.useState(false)
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      window.addEventListener("scroll", () =>
+        setScrolled(window.pageYOffset > 1)
+      )
+    }
+  }, [])
+
   return (
-    <header className={classes.header}>
+    <header
+      className={classNames(classes.header, {
+        [classes["non-transparent"]]: scrolled,
+      })}
+    >
       <div className="container flex-row justify-between">
         {/* Logo */}
         <div className="flex-row">
