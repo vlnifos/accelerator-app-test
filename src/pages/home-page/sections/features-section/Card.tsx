@@ -42,7 +42,9 @@ export const Card = (props: FeatureCardProps) => {
       <div>{renderFeatures()}</div>
 
       <div className={classes.action}>
-        <Button onClick={props.action.handler}>{props.action.title}</Button>
+        <Button onClick={props.action.handler} fullWidth>
+          {props.action.title}
+        </Button>
       </div>
     </div>
   )

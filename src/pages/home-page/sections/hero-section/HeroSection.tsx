@@ -25,7 +25,9 @@ export const HeroSection = () => {
         </div>
 
         {/* Schedule a Demo button */}
-        <Button onClick={() => {}}>Schedule a Demo</Button>
+        <div className={classes["schedule-demo-btn"]}>
+          <Button onClick={() => {}}>Schedule a Demo</Button>
+        </div>
 
         <div className={classes["watch-video"]}>
           <Button onClick={() => {}}>

@@ -5,10 +5,7 @@ import { Route, Routes } from "react-router-dom"
 export const RoutesList = (props: any) => {
   return (
     <Routes>
-      <Route
-        path={'/'}
-        element={<HomePage />}
-      />
+      <Route path={"/"} element={<HomePage />} />
     </Routes>
   )
 }

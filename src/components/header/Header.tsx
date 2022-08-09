@@ -34,7 +34,9 @@ export const Header = (props: Props) => {
           <Button onClick={() => {}} type={"outlined"}>
             Sign In
           </Button>
-          <Button onClick={() => {}}>Request a Demo</Button>
+          <div className={classes["request-demo-btn"]}>
+            <Button onClick={() => {}}>Request a Demo</Button>
+          </div>
         </div>
       </div>
     </header>

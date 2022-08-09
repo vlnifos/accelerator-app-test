@@ -1,7 +1,9 @@
 import classes from "./Button.module.scss"
+import cx from "classnames"
 
 type Props = {
   type?: "solo" | "outlined"
+  fullWidth?: boolean
   children: React.ReactElement | string
   onClick: () => void
 }
@@ -15,7 +17,9 @@ export const Button = (props: Props) => {
 
   return (
     <button
-      className={`${classes.btn} ${btnClasses[props.type || "regular"]}`}
+      className={cx(classes.btn, btnClasses[props.type || "regular"], {
+        [classes["btn-full-width"]]: props.fullWidth,
+      })}
       onClick={props.onClick}
     >
       {props.children}
