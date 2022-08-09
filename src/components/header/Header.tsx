@@ -20,7 +20,7 @@ export const Header = () => {
   return (
     <header
       className={classNames(classes.header, {
-        [classes["non-transparent"]]: scrolled,
+        [classes.nonTransparent]: scrolled,
       })}
     >
       <div className="container flex-row justify-between">
@@ -32,7 +32,7 @@ export const Header = () => {
         </div>
 
         {/* Hamburger menu */}
-        <div className={classes["hamburger-menu"]}>
+        <div className={classes.hamburgerMenu}>
           <Button type="solo" onClick={() => setMenuOpen(!menuOpen)}>
             <img src={hamburgerIcon} alt="" />
           </Button>
@@ -41,7 +41,7 @@ export const Header = () => {
         {/* Buttons */}
         <div
           className={classNames("flex-row", classes.buttons, {
-            [classes["menu-visible"]]: menuOpen,
+            [classes.menuVisible]: menuOpen,
           })}
         >
           <Button onClick={() => {}} type={"solo"}>
@@ -59,7 +59,7 @@ export const Header = () => {
           <Button onClick={() => {}} type={"outlined"}>
             Sign In
           </Button>
-          <div className={classes["request-demo-btn"]}>
+          <div className={classes.requestDemoBtn}>
             <Button onClick={() => {}}>Request a Demo</Button>
           </div>
         </div>

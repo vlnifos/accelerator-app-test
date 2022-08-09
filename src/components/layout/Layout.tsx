@@ -1,10 +1,14 @@
+import React from "react"
+import "../../index.scss"
 import { CookieWarning } from "components/cookie-warning/CookieWarning"
 import { Footer } from "components/footer/Footer"
 import { Header } from "components/header/Header"
-import { RoutesList } from "components/routes-list/RoutesList"
-import React from "react"
 
-export const Layout = () => {
+type Props = {
+  children: any
+}
+
+export const Layout = (props: Props) => {
   const [isCookieOpen, setIsCookieOpen] = React.useState(true)
 
   return (
@@ -17,7 +21,7 @@ export const Layout = () => {
 
       <Header />
 
-      <RoutesList />
+      {props.children}
 
       <Footer />
     </div>

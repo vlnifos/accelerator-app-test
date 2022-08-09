@@ -9,7 +9,7 @@ type Props = {
 
 export const Section = (props: Props) => {
   return (
-    <div className={classes.section}>
+    <div>
       <div className={classes.title}>{props.title}</div>
 
       <Divider />

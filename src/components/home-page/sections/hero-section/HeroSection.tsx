@@ -7,30 +7,28 @@ import * as classes from "./HeroSection.module.scss"
 
 export const HeroSection = () => {
   return (
-    <div className={classes["hero-section-background"]}>
+    <div className={classes.heroSectionBackground}>
       <img className={classes.looper} src={looper} alt="img" />
 
-      <div className={`container ${classes["hero-section"]}`}>
+      <div className={`container ${classes.heroSection}`}>
         {/* Upper title */}
-        <div className={classes["upper-title"]}>Join in and connect</div>
+        <div className={classes.upperTitle}>Join in and connect</div>
 
         {/* Title */}
-        <div className={classes["title"]}>
-          To faster your innovation potential
-        </div>
+        <div className={classes.title}>To faster your innovation potential</div>
 
         {/* Subtitle */}
-        <div className={classes["subtitle"]}>
+        <div className={classes.subtitle}>
           AcceleratorApp Innovation Community — Tools and community to
           facilitate innovation between all members of our community
         </div>
 
         {/* Schedule a Demo button */}
-        <div className={classes["schedule-demo-btn"]}>
+        <div className={classes.scheduleDemoBtn}>
           <Button onClick={() => {}}>Schedule a Demo</Button>
         </div>
 
-        <div className={classes["watch-video"]}>
+        <div className={classes.watchVideo}>
           <Button onClick={() => {}}>
             <div className="flex-row">
               <img src={playIcon} alt="img" />

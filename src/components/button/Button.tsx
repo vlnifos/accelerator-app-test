@@ -11,15 +11,15 @@ type Props = {
 
 export const Button = (props: Props) => {
   const btnClasses = {
-    regular: classes["btn-regular"],
-    solo: classes["btn-solo"],
-    outlined: classes["btn-outlined"],
+    regular: classes.btnRegular,
+    solo: classes.btnSolo,
+    outlined: classes.btnOutlined,
   }
 
   return (
     <button
       className={cx(classes.btn, btnClasses[props.type || "regular"], {
-        [classes["btn-full-width"]]: props.fullWidth,
+        [classes.btnFullWidth]: props.fullWidth,
       })}
       onClick={props.onClick}
     >

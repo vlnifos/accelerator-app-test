@@ -37,7 +37,7 @@ export const Card = (props: FeatureCardProps) => {
         <Divider />
       </div>
 
-      <div className={classes["features-title"]}>Popular Features</div>
+      <div className={classes.featuresTitle}>Popular Features</div>
 
       <div>{renderFeatures()}</div>
 

@@ -24,12 +24,12 @@ export const Footer = () => {
   return (
     <footer className={classes.footer}>
       {/* Email */}
-      <div className={classes["email-container"]}>
+      <div className={classes.emailContainer}>
         {/* Title */}
         <div className={classes.title}>Join our growing community</div>
 
         {/* Email subscription */}
-        <div className={classes["email-subscription"]}>
+        <div className={classes.emailSubscription}>
           Sign up for news and updates about AcceleratorApp
         </div>
 
@@ -51,7 +51,7 @@ export const Footer = () => {
       </div>
 
       {/* Info */}
-      <div className={`container ${classes["info-container"]}`}>
+      <div className={`container ${classes.infoContainer}`}>
         {/* Community section */}
         <Section title="Community">
           <Button type="solo" onClick={() => {}}>
@@ -114,7 +114,7 @@ export const Footer = () => {
         </Section>
 
         {/* Documentation section */}
-        <div className={classes["documentation-section"]}>
+        <div className={classes.documentationSection}>
           <Section title="Documentation">
             <Button type="solo" onClick={() => {}}>
               Documentation
@@ -132,7 +132,7 @@ export const Footer = () => {
         </div>
 
         {/* Follow section */}
-        <div className={classes["follow-section"]}>
+        <div className={classes.followSection}>
           <Section title="Follow">
             <Button type="outlined" onClick={() => {}}>
               <img src={linkedInIcon} alt="" />
@@ -154,9 +154,7 @@ export const Footer = () => {
       <div className={`container ${classes.copyright}`}>
         <Divider />
 
-        <div
-          className={`flex-row justify-between ${classes["copyright-btns"]}`}
-        >
+        <div className={`flex-row justify-between ${classes.copyrightBtns}`}>
           {/* Buttons */}
           <div className={`flex-row`}>
             <Button type="solo" onClick={() => {}}>
@@ -181,7 +179,7 @@ export const Footer = () => {
           </div>
 
           {/* Copyright & Language */}
-          <div className={`flex-row ${classes["copyright-language"]}`}>
+          <div className={`flex-row ${classes.copyrightLanguage}`}>
             <span>Copyright © 2022 AcceleratorApp All Rights Reserved</span>
 
             <Divider direction="vertical" />
@@ -190,7 +188,7 @@ export const Footer = () => {
             <Button type="solo" onClick={() => {}}>
               <div className={`flex-row`}>
                 <img src={globeIcon} alt="" />
-                <span className={classes["language"]}>English</span>
+                <span className={classes.language}>English</span>
               </div>
             </Button>
           </div>

@@ -23,7 +23,8 @@
     "paths": {
       "components/*": ["components/*"],
       "images/*": ["images/*"],
-    }
+    },
+    "plugins": [{ "name": "typescript-plugin-css-modules" }],
   },
   "include": [
     "src"

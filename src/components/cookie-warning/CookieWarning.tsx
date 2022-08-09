@@ -8,10 +8,8 @@ type Props = {
 
 export const CookieWarning = (props: Props) => {
   return (
-    <div className={classes["cookie-warning"]}>
-      <div
-        className={`flex-row justify-between ${classes["cookie-container"]}`}
-      >
+    <div className={classes.cookieWarning}>
+      <div className={`flex-row justify-between ${classes.cookieContainer}`}>
         <div className={`flex-row`}>
           <span>
             By using this site on the AcceleratorApp network, you agree with our
@@ -24,14 +22,14 @@ export const CookieWarning = (props: Props) => {
           <div className="flex-row">
             <Button onClick={props.handleCookieAction}>Accept cookies</Button>
 
-            <div className={classes["more-btn"]}>
+            <div className={classes.moreBtn}>
               <Button type={"outlined"} onClick={() => {}}>
                 Want to know more?
               </Button>
             </div>
           </div>
 
-          <div className={classes["policy-btn"]}>
+          <div className={classes.policyBtn}>
             <Button type={"solo"} onClick={() => {}}>
               Read our Cookie Policy
             </Button>
