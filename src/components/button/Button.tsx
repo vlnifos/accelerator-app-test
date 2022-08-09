@@ -4,7 +4,7 @@ import cx from "classnames"
 type Props = {
   type?: "solo" | "outlined"
   fullWidth?: boolean
-  children: React.ReactElement | string
+  children: React.ReactElement | React.ReactElement[] | string
   onClick: () => void
 }
 

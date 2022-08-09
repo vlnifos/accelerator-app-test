@@ -1,8 +1,15 @@
 .divider {
-  height: 1px;
-  width: 100%;
-
   background: #cbd6e2;
 
   border: none;
+}
+
+.horizontal {
+  height: 1px;
+  width: 100%;
+}
+
+.vertical {
+  height: 100%;
+  width: 1px;
 }

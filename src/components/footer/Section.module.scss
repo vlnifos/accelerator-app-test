@@ -1,0 +1,17 @@
+.section {
+}
+
+.title {
+  font-weight: 600;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+
+  button {
+    margin: 16px 0;
+
+    text-align: left;
+  }
+}

@@ -1,5 +1,20 @@
 import classes from "./Divider.module.scss"
 
-export const Divider = () => {
-  return <hr className={classes.divider} />
+type Props = {
+  direction?: "vertical" | "horizontal"
+}
+
+export const Divider = (props: Props) => {
+  const directionClass = {
+    vertical: classes.vertical,
+    horizontal: classes.horizontal,
+  }
+
+  return (
+    <hr
+      className={`${classes.divider} ${
+        directionClass[props.direction || "horizontal"]
+      }`}
+    />
+  )
 }
