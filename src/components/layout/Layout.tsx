@@ -15,7 +15,7 @@ export const Layout = () => {
         />
       )}
 
-      <Header isAuth />
+      <Header />
 
       <RoutesList />
 

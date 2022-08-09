@@ -19,13 +19,15 @@ export const CookieWarning = (props: Props) => {
         </div>
 
         {/* Buttons */}
-        <div className={`flex-row`}>
-          <Button onClick={props.handleCookieAction}>Accept cookies</Button>
+        <div className={`flex-row ${classes.btns}`}>
+          <div className="flex-row">
+            <Button onClick={props.handleCookieAction}>Accept cookies</Button>
 
-          <div className={classes["more-btn"]}>
-            <Button type={"outlined"} onClick={() => {}}>
-              Want to know more?
-            </Button>
+            <div className={classes["more-btn"]}>
+              <Button type={"outlined"} onClick={() => {}}>
+                Want to know more?
+              </Button>
+            </div>
           </div>
 
           <div className={classes["policy-btn"]}>

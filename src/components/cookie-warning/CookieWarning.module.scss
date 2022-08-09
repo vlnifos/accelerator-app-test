@@ -21,6 +21,20 @@
   > * {
     flex: 1;
   }
+
+  @media only screen and (max-width: 500px) {
+    display: flex;
+    flex-direction: column;
+
+    text-align: center;
+  }
+}
+
+.btns {
+  @media only screen and (max-width: 500px) {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .more-btn {
@@ -39,5 +53,9 @@
 
     padding: 0;
     color: #0d122b;
+  }
+
+  @media only screen and (max-width: 500px) {
+    width: 100%;
   }
 }

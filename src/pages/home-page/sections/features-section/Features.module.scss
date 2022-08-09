@@ -13,7 +13,6 @@
   }
 
   div:nth-child(3) {
-    color: yellow;
     margin-top: 5%;
   }
 
@@ -37,4 +36,35 @@
 
   align-items: center;
   justify-content: center;
+
+  @media only screen and (max-width: 800px) {
+    width: 140px;
+    height: 140px;
+
+    img {
+      width: 80px;
+      height: 80px;
+    }
+  }
+
+  @media only screen and (max-width: 700px) {
+    width: 100px;
+    height: 100px;
+
+    img {
+      width: 60px;
+      height: 60px;
+    }
+  }
+  @media only screen and (max-width: 500px) {
+    width: 65px;
+    height: 65px;
+
+    border-radius: 8px;
+
+    img {
+      width: 36px;
+      height: 36px;
+    }
+  }
 }

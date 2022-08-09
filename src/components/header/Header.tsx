@@ -3,13 +3,11 @@ import classNames from "classnames"
 import { Button } from "components/button/Button"
 import React, { useEffect } from "react"
 import classes from "./Header.module.scss"
+import hamburgerIcon from "assets/images/hamburger.svg"
 
-type Props = {
-  isAuth: boolean
-}
-
-export const Header = (props: Props) => {
+export const Header = () => {
   const [scrolled, setScrolled] = React.useState(false)
+  const [menuOpen, setMenuOpen] = React.useState(false)
 
   useEffect(() => {
     if (typeof window !== "undefined") {
@@ -27,14 +25,25 @@ export const Header = (props: Props) => {
     >
       <div className="container flex-row justify-between">
         {/* Logo */}
-        <div className="flex-row">
-          <img src={Logo} alt="img" className={classes.logo} />
+        <div className={`flex-row ${classes.logo}`}>
+          <img src={Logo} alt="img" />
 
           <span>AcceleratorApp</span>
         </div>
 
+        {/* Hamburger menu */}
+        <div className={classes["hamburger-menu"]}>
+          <Button type="solo" onClick={() => setMenuOpen(!menuOpen)}>
+            <img src={hamburgerIcon} alt="" />
+          </Button>
+        </div>
+
         {/* Buttons */}
-        <div className={`flex-row ${classes.buttons}`}>
+        <div
+          className={classNames("flex-row", classes.buttons, {
+            [classes["menu-visible"]]: menuOpen,
+          })}
+        >
           <Button onClick={() => {}} type={"solo"}>
             Community
           </Button>

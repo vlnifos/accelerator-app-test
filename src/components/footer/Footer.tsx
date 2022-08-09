@@ -151,7 +151,7 @@ export const Footer = () => {
       </div>
 
       {/* Copyright */}
-      <div className="container">
+      <div className={`container ${classes.copyright}`}>
         <Divider />
 
         <div
@@ -190,7 +190,7 @@ export const Footer = () => {
             <Button type="solo" onClick={() => {}}>
               <div className={`flex-row`}>
                 <img src={globeIcon} alt="" />
-                <span>English</span>
+                <span className={classes["language"]}>English</span>
               </div>
             </Button>
           </div>
