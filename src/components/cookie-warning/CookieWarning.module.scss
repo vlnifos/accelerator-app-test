@@ -31,6 +31,8 @@
 }
 
 .btns {
+  justify-content: end;
+  
   @media only screen and (max-width: 500px) {
     display: flex;
     flex-direction: column;
